@@ -81,13 +81,131 @@ A dedicated NAT Network was created in VirtualBox.
 
 Configuration:
 Network Name: NatNetwork IPv4 Prefix:  10.0.0.0/24 DHCP:Enabled IPv6:Disabled
- ![network settings](screenshot-network-settings-1.p)
+ ![](screenshot-network-settings-1.p)
 
-## Step 4. Import Kali Linux
-The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
-
-The VM network adapter was configured as follows:
+ 
+### Step 4 — Import Kali Linux
+ 
+The Kali Linux VM was downloaded from the [official Kali Linux site](https://kali.org/get-kali) and imported into VirtualBox.
+ 
+The network adapter was configured as follows:
+ 
+```
 Adapter 1
-Attached to: NAT Network
-Network: NatNetwork
+Attached to:  NAT Network
+Network:      NatNetwork
 Adapter Type: Intel PRO/1000 MT Desktop
+```
+ 
+Resources allocated to the VM:
+ 
+```
+RAM: 2048 MB
+```
+ 
+A shared folder was also configured to transfer files between the host OS and the Kali VM.
+ 
+---
+ 
+### Step 5 — Configure the Kali Linux Network
+ 
+The Kali Linux network settings were configured with a consistent, static IPv4 address:
+ 
+```
+IP Address:  10.0.0.2
+Subnet Mask: 255.255.255.0
+Gateway:     10.0.0.1
+DNS:         8.8.8.8
+```
+ 
+A consistent IP address makes the lab easier to document and reference in future exercises.
+ 
+---
+ 
+### Step 6 — Create a Clean VM Snapshot
+ 
+After completing the initial configuration, a VirtualBox snapshot was taken:
+ 
+```
+Snapshot Name: Clean Kali - Network Setup
+```
+ 
+This snapshot preserves the clean baseline configuration. If a future exercise damages or misconfigures the VM, it can be restored to this known-good state.
+ 
+---
+ 
+## 🔎 Lab Verification
+ 
+| ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
+| ------------------------------ | -------------------------------- | -------------------------------- |
+| 🌐 Check IP address            | `ip a`                            | Correct Kali IP displayed        |
+| 📡 Test gateway                | `ping 10.0.0.1`                   | Successful replies               |
+| 🌍 Test internet connectivity  | `ping 8.8.8.8`                    | Successful replies               |
+| 🔎 Test DNS resolution         | `nslookup networkwalks.com`       | Domain resolves                  |
+| 🔄 Verify snapshot             | Restore snapshot, then run `ip a` | Baseline configuration restored  |
+ 
+**Example results:**
+ 
+```
+IP Address: 10.0.0.2/24
+Gateway:    10.0.0.1
+DNS:        8.8.8.8
+```
+ 
+---
+ 
+## 🐞 Problems Encountered & Solutions
+ 
+### Problem 1 — [Describe your issue]
+ 
+[What happened, and how you fixed it — include the commands you used]
+ 
+### Problem 2 — [Describe your issue]
+ 
+[What happened, and how you fixed it]
+ 
+---
+ 
+## 💡 What I Learned
+ 
+**1. NAT vs. NAT Network**
+[Your reflection]
+ 
+**2. Virtual Machine Networking**
+[Your reflection]
+ 
+**3. Static IP Configuration**
+[Your reflection]
+ 
+**4. VM Snapshots**
+[Your reflection]
+ 
+**5. Documentation**
+[Your reflection]
+ 
+---
+ 
+## 🔐 Security & Ethical Use
+ 
+This lab is intended strictly for educational purposes. All testing must be limited to systems you own or are explicitly authorized to assess.
+ 
+---
+ 
+## 🔗 Tools & Resources
+ 
+- **7-Zip** — <https://7-zip.org/download.html>
+- **VirtualBox** — <https://virtualbox.org/wiki/Downloads>
+- **Kali Linux** — <https://kali.org/get-kali>
+---
+ 
+## 👤 Author
+ 
+**[Your Full Name]**
+Cybersecurity Student
+ 
+LinkedIn: [your-linkedin-url]
+ 
+---
+ 
+**Program:** [Your Program]  |  **Week:** [X]  |  **Project:** Cybersecurity & Pentesting Lab Setup  |  **Repository:** GitHub
+ 
