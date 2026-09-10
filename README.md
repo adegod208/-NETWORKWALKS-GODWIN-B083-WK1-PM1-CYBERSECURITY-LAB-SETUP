@@ -28,7 +28,7 @@ The lab operates within a private virtual network, allowing for the future addit
 - Take a clean VM snapshot for recovery.
 - Document the complete setup process.
 - Prepare the environment for future cybersecurity projects.
-
+![](kali.png)
 
 ## 🛡️ Purpose of the Lab
 The lab offers a secure, isolated environment designed for cybersecurity education and authorized security testing.
@@ -64,7 +64,6 @@ It can also be used for activities such as:
 
 
  ![](screenshot-network-settings-1.png)
-![](kali.png)
 ![](kali-Network-info.png)
 ![](kali-network-settings.png)
  
