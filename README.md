@@ -61,78 +61,11 @@ It can also be used for activities such as:
 
 ---
 
-# 🪜 Lab Setup Procedure  
 
-## Step 1. Install 7-Zip  
-7-Zip is installed to extract the Kali Linux virtual-machine package, which might be provided as a `.7z` archive.  
 
-**Tool:** 7-Zip  
-
----  
-
-## Step 2. Install VirtualBox  
-VirtualBox is installed to act as the hypervisor.  
-
----  
-
-## Step 3. Create the NAT Network  
-A NAT Network is set up in VirtualBox.  
-A dedicated NAT Network was created in VirtualBox.
-
-Configuration:
-Network Name: NatNetwork IPv4 Prefix:  10.0.0.0/24 DHCP:Enabled IPv6:Disabled
  ![](screenshot-network-settings-1.p)
 
- 
-### Step 4 — Import Kali Linux
- 
-The Kali Linux VM was downloaded from the [official Kali Linux site](https://kali.org/get-kali) and imported into VirtualBox.
- 
-The network adapter was configured as follows:
- 
-```
-Adapter 1
-Attached to:  NAT Network
-Network:      NatNetwork
-Adapter Type: Intel PRO/1000 MT Desktop
-```
- 
-Resources allocated to the VM:
- 
-```
-RAM: 2048 MB
-```
- 
-A shared folder was also configured to transfer files between the host OS and the Kali VM.
- 
----
- 
-### Step 5 — Configure the Kali Linux Network
- 
-The Kali Linux network settings were configured with a consistent, static IPv4 address:
- 
-```
-IP Address:  10.0.0.2
-Subnet Mask: 255.255.255.0
-Gateway:     10.0.0.1
-DNS:         8.8.8.8
-```
- 
-A consistent IP address makes the lab easier to document and reference in future exercises.
- 
----
- 
-### Step 6 — Create a Clean VM Snapshot
- 
-After completing the initial configuration, a VirtualBox snapshot was taken:
- 
-```
-Snapshot Name: Clean Kali - Network Setup
-```
- 
-This snapshot preserves the clean baseline configuration. If a future exercise damages or misconfigures the VM, it can be restored to this known-good state.
- 
----
+
  
 ## 🔎 Lab Verification
  
@@ -156,7 +89,7 @@ DNS:        8.8.8.8
  
 ## 🐞 Problems Encountered & Solutions
  
-### Problem 1 — No Internet Access on Kali VM
+### Problem -- No Internet Access on Kali VM
  
 [After importing the Kali Linux VM and attaching it to the NAT Network, the VM received an IP address but had no internet connectivity. Pings to the gateway succeeded, but pings to external addresses (e.g., 8.8.8.8) timed out.
 
@@ -192,7 +125,7 @@ cat /etc/resolv.conf]
  
 ## 🔐 Security & Ethical Use
  
-This lab is intended strictly for educational purposes. All testing must be limited to systems you own or are explicitly authorized to assess.
+This lab is intended strictly for educational purposes. 
  
 ---
  
