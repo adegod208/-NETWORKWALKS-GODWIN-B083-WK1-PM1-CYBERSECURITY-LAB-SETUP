@@ -63,9 +63,10 @@ It can also be used for activities such as:
 
 
 
- ![](screenshot-network-settings-1.p)
-
-
+ ![](screenshot-network-settings-1.png)
+![](kali.png)
+![](kali-Network-info.png)
+![](kali-network-settings.png)
  
 ## 🔎 Lab Verification
  
