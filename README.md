@@ -95,10 +95,7 @@ DNS:        8.8.8.8
 
 Commands used to diagnose:
 
-ip a
-ping 10.0.0.1
-ping 8.8.8.8
-cat /etc/resolv.conf]
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
  
 
  
