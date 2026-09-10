@@ -95,7 +95,9 @@ DNS:        8.8.8.8
 
 Commands used to diagnose:
 
+```
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+```
  
 
  
@@ -135,8 +137,8 @@ This lab is intended strictly for educational purposes.
  
 ## 👤 Author
  
-**[ADEWUYI GODWIN OLUWAPELUMI]**
-Cybersecurity Student
+**ADEWUYI GODWIN OLUWAPELUMI**
+Cybersecurity Intern
  
 LinkedIn: [www.linkedin.com/in/godwin-adewuyi-58244236b]
  
