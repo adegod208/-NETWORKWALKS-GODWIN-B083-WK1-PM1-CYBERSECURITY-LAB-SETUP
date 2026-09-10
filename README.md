@@ -156,13 +156,18 @@ DNS:        8.8.8.8
  
 ## 🐞 Problems Encountered & Solutions
  
-### Problem 1 — [Describe your issue]
+### Problem 1 — [No Internet Access on Kali VM]
  
-[What happened, and how you fixed it — include the commands you used]
+[After importing the Kali Linux VM and attaching it to the NAT Network, the VM received an IP address but had no internet connectivity. Pings to the gateway succeeded, but pings to external addresses (e.g., 8.8.8.8) timed out.
+
+Commands used to diagnose:
+
+ip a
+ping 10.0.0.1
+ping 8.8.8.8
+cat /etc/resolv.conf]
  
-### Problem 2 — [Describe your issue]
- 
-[What happened, and how you fixed it]
+
  
 ---
  
