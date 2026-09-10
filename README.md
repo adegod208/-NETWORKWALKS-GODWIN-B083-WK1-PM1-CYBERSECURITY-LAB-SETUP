@@ -64,8 +64,8 @@ It can also be used for activities such as:
 
 
  ![](screenshot-network-settings-1.png.png)
-![](kali-Network-info.png)
-![](kali-network-settings.png)
+
+
  
 ## 🔎 Lab Verification
  
@@ -84,8 +84,8 @@ IP Address: 10.0.0.2/24
 Gateway:    10.0.0.1
 DNS:        8.8.8.8
 ```
- 
----
+ ![](kali-network-settings.png)
+![](kali-Network-info.png)
  
 ## 🐞 Problems Encountered & Solutions
  
