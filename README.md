@@ -63,7 +63,7 @@ It can also be used for activities such as:
 
 
 
- ![](screenshot-network-settings-1.png)
+ ![](screenshot-network-settings-1.png.png)
 ![](kali-Network-info.png)
 ![](kali-network-settings.png)
  
