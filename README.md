@@ -156,7 +156,7 @@ DNS:        8.8.8.8
  
 ## 🐞 Problems Encountered & Solutions
  
-### Problem 1 — [No Internet Access on Kali VM]
+### Problem 1 — No Internet Access on Kali VM
  
 [After importing the Kali Linux VM and attaching it to the NAT Network, the VM received an IP address but had no internet connectivity. Pings to the gateway succeeded, but pings to external addresses (e.g., 8.8.8.8) timed out.
 
@@ -174,19 +174,19 @@ cat /etc/resolv.conf]
 ## 💡 What I Learned
  
 **1. NAT vs. NAT Network**
-[Your reflection]
+[I learned that a NAT Network lets multiple VMs share internet access while also communicating with each other, unlike a standard NAT adapter which isolates each VM.]
  
 **2. Virtual Machine Networking**
-[Your reflection]
+[I got more comfortable diagnosing VM connectivity using tools like ip a and ping instead of assuming the network would just work.]
  
 **3. Static IP Configuration**
-[Your reflection]
+[Assigning a static IP taught me why consistent addressing matters for documenting and referencing hosts in a lab environment]
  
 **4. VM Snapshots**
-[Your reflection]
+[I learned that taking a clean snapshot before further changes gives me a safe recovery point if something breaks later.]
  
 **5. Documentation**
-[Your reflection]
+[Writing notes as I worked showed me how much detail gets lost if documentation is left until after the fact.]
  
 ---
  
@@ -205,12 +205,12 @@ This lab is intended strictly for educational purposes. All testing must be limi
  
 ## 👤 Author
  
-**[Your Full Name]**
+**[ADEWUYI GODWIN OLUWAPELUMI]**
 Cybersecurity Student
  
-LinkedIn: [your-linkedin-url]
+LinkedIn: [www.linkedin.com/in/godwin-adewuyi-58244236b]
  
 ---
  
-**Program:** [Your Program]  |  **Week:** [X]  |  **Project:** Cybersecurity & Pentesting Lab Setup  |  **Repository:** GitHub
+**Program:** Cybersecurity at Networkwalks  | **Week:** 01 |  **Project:** Cybersecurity & Pentesting Lab Setup  |  **Repository:** GitHub
  
